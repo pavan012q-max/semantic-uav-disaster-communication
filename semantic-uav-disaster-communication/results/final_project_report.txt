@@ -1,0 +1,47 @@
+FINAL PROJECT REPORT
+
+Project Title: Deep Embedded Clustering-Based Semantic User Grouping for UAV-Assisted Disaster Communication
+
+
+Number of users: 1000
+
+Processed feature dimensions: 10
+
+
+MODEL COMPARISON
+
+ Method  Clusters  Silhouette_Score  Davies_Bouldin_Index  Calinski_Harabasz_Score
+K-Means         4            0.6320                0.5501                2630.6143
+ DBSCAN         4            0.6320                0.5501                2630.6143
+    DEC         4            0.6320                0.5501                2630.6144
+
+
+BEST METHODS BY METRIC
+
+Highest Silhouette Score: K-Means (0.6320)
+
+Lowest Davies-Bouldin Index: DEC (0.5501)
+
+Highest Calinski-Harabasz Score: DEC (2630.6144)
+
+
+DEC CLUSTER CHARACTERISTICS
+
+ dec_cluster  Users  Avg_X  Avg_Y  Avg_Channel  Avg_Priority  Avg_Delay  Avg_Semantic_Similarity Most_Common_Data_Type Group_Name
+           0    253 79.738 79.827        0.359         1.206      5.948                    0.309               General    General
+           1    253 19.715 19.256        0.827         2.814      0.978                    0.904               Medical    Medical
+           2    256 24.428 79.671        0.516         2.016      2.999                    0.581              Location   Location
+           3    238 79.965 24.346        0.681         2.807      1.542                    0.818                Rescue     Rescue
+
+
+MOST COMMON DATA TYPE BY CLUSTER
+
+Cluster 0: General
+Cluster 1: Medical
+Cluster 2: Location
+Cluster 3: Rescue
+
+
+INTERPRETATION AND LIMITATIONS
+
+The table above contains measured clustering metrics from the result CSV files. Similar values indicate no meaningful measured advantage for one method on these metrics. Cluster names summarize observed cluster characteristics. The groups may inform downstream UAV communication research; this project does not perform flight control, packet routing, or resource allocation.

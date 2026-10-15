@@ -1,0 +1,2 @@
+x_coordinate,y_coordinate,channel_condition,emergency_priority,requested_data_type,delay_requirement,semantic_similarity,predicted_cluster,interpreted_group,cluster_confidence,explanation
+30.0,20.0,0.75,3.0,Medical,0.8,0.9,1,Medical,0.8556059002876282,"This cluster's most common requested data type is Medical; its mean emergency priority is 2.81, mean delay requirement is 0.98, and mean semantic similarity is 0.90. These are observed cluster characteristics, not a resource-allocation decision."

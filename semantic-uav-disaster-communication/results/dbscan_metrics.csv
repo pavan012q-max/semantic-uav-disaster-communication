@@ -1,0 +1,2 @@
+Method,Clusters,Silhouette_Score,Davies_Bouldin_Index,Calinski_Harabasz_Score,Noise_Points
+DBSCAN,4,0.6320423771534343,0.5500860485596966,2630.6143419005516,0
